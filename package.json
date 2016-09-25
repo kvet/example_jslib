@@ -1,0 +1,17 @@
+{
+  "name": "example_jslib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "watch": {
+    "doc": "src/*.js",
+    "doc:x": "src/*.js"
+  },
+  "scripts": {
+    "doc": "jsdoc --configure jsdoc.json",
+    "doc:x": "jsdoc --configure jsdoc.json --explain > ast/ast.json && node ast_parser/strip_junk.js ast/ast.json > ast/ast.clean.json && node ast_parser/construct_structures.js ast/ast.clean.json > ast/structures.json",
+    "watch": "npm-watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
