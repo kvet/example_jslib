@@ -13,5 +13,8 @@
     "watch": "npm-watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.4.1"
+  }
 }
