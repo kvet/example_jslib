@@ -5,7 +5,7 @@
   "main": "index.js",
   "watch": {
     "doc": "src/*.js",
-    "doc:x": "src/*.js"
+    "doc:x": "{src,ast_parser}/*.js"
   },
   "scripts": {
     "doc": "jsdoc --configure jsdoc.json",

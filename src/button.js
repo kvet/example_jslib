@@ -79,7 +79,7 @@ module.exports = function(){
              *
              * @interface IButtonOnClickActionArguments
              * @extends module:button~IButtonActionArguments
-             * @alias module:button.IButtonOnClickActionArguments
+             * @alias module:button~IButtonOnClickActionArguments
              */
             return /** @lends module:button~IButtonActionArguments */ {
                 /**
