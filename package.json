@@ -9,7 +9,7 @@
   },
   "scripts": {
     "doc": "jsdoc --configure jsdoc.json",
-    "doc:x": "jsdoc --configure jsdoc.json --explain > ast/ast.json && node ast_parser/strip_junk.js ast/ast.json > ast/ast.clean.json && node ast_parser/construct_structures.js ast/ast.clean.json > ast/structures.json",
+    "doc:x": "jsdoc --configure jsdoc.json --explain > ast/ast.json && node ast_parser/strip_junk.js ast/ast.json > ast/ast.clean.json && node ast_parser/generate_dts.js ast/ast.clean.json",
     "watch": "npm-watch"
   },
   "author": "",

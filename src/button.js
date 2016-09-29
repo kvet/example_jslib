@@ -26,7 +26,7 @@ module.exports = function(){
              * @interface IButtonOptions
              * @extends module:widget~IWidgetOptions
              */
-            return /** @lends module:button~IButtonOptions */ {
+            return /** @lends module:button~IButtonOptions# */ {
 
                 /**
                  * Switches disabled state for widget
@@ -48,29 +48,9 @@ module.exports = function(){
                  * This callback is displayed as part of the Requester class.
                  * 
                  * @callback IButtonOnClickCallback
-                 * @param {module:button~IButtonOnClickActionArguments} arguments - Action arguments.
+                 * @param {module:button~IButtonOnClickActionArguments} args - Action arguments.
                  */
             }
-        },
-
-        _getActionArgs: {
-
-            /**
-             * Interface for Button action arguments.
-             *
-             * @interface IButtonActionArguments
-             * @extends module:widget~IWidgetActionArguments
-             * @alias module:button.IButtonActionArguments
-             */
-
-            /**
-             * Button instance
-             * 
-             * @name component
-             * @memberOf module:button~IButtonActionArguments
-             * @type {module:button~Button}
-             */
-
         },
 
         _fireClick: function() {
@@ -78,14 +58,14 @@ module.exports = function(){
              * Interface for Button onClick action arguments.
              *
              * @interface IButtonOnClickActionArguments
-             * @extends module:button~IButtonActionArguments
+             * @extends module:widget~IWidgetActionArguments
              * @alias module:button~IButtonOnClickActionArguments
              */
-            return /** @lends module:button~IButtonActionArguments */ {
+            return /** @lends module:button~IButtonOnClickActionArguments# */ {
                 /**
                  * Event instance
                  * 
-                 * @type {JQueryEvent}
+                 * @type {?Event}
                  */
                 jQueryEvent: event
             };

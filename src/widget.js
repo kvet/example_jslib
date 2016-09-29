@@ -19,6 +19,7 @@ module.exports = Widget = function() {
 
         /**
          * @memberof module:widget~Widget#
+         * @method
          * @returns {HTMLElement} Widget instance
          */
         element: function() {
@@ -51,12 +52,12 @@ module.exports = Widget = function() {
              * @interface IWidgetActionArguments
              */
 
-            return /** @lends module:widgetIWidgetActionArguments */ {
+            return /** @lends module:widget~IWidgetActionArguments# */ {
 
                 /**
                  * Widget instance
                  * 
-                 * @type {module:widget}
+                 * @type {module:widget~Widget}
                  */
                 component: this,
 
@@ -79,6 +80,6 @@ module.exports = Widget = function() {
  * @method
  * @memberof module:widget~Widget
  * @param {HTMLElement} element An element with instantiated widget on it
- * @returns {module:widget} Widget instance
+ * @returns {module:widget~Widget} Widget instance
  */
 Widget.getInstance = function(element) {};
