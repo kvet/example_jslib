@@ -11,7 +11,7 @@ module.exports = Widget = function() {
          * @name Widget
          * 
          * @param {HTMLElement} element Pass element there
-         * @param {?module:widget~IWidgetOptions} [options=null] Pass options or null there
+         * @param {?module:widget~WidgetOptions} [options=null] Pass options or null there
          */
         ctor: function(element, options) {
 
@@ -30,10 +30,10 @@ module.exports = Widget = function() {
             /**
              * Interface for Widget options.
              *
-             * @interface module:widget~IWidgetOptions
+             * @interface module:widget~WidgetOptions
              */
             
-            return /** @lends module:widget~IWidgetOptions */ {
+            return /** @lends module:widget~WidgetOptions */ {
 
                 /**
                  * Switches visible state for widget
@@ -49,10 +49,10 @@ module.exports = Widget = function() {
             /**
              * Interface for Widget action arguments.
              *
-             * @interface IWidgetActionArguments
+             * @interface WidgetActionArguments
              */
 
-            return /** @lends module:widget~IWidgetActionArguments# */ {
+            return /** @lends module:widget~WidgetActionArguments# */ {
 
                 /**
                  * Widget instance

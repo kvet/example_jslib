@@ -13,7 +13,7 @@ module.exports = function(){
          * @extends module:widget~Widget
          * 
          * @param {HTMLElement} element Pass element there
-         * @param {?module:button~IButtonOptions} [options=null] options Pass options or null there
+         * @param {?module:button~ButtonOptions} [options=null] options Pass options or null there
          */
         ctor: function(element, options) {
 
@@ -22,11 +22,11 @@ module.exports = function(){
         _getDefaultOptions: function() {
             /**
              * Interface for Button options.
-             *
-             * @interface IButtonOptions
-             * @extends module:widget~IWidgetOptions
+             * 
+             * @interface ButtonOptions
+             * @extends module:widget~WidgetOptions
              */
-            return /** @lends module:button~IButtonOptions# */ {
+            return /** @lends module:button~ButtonOptions# */ {
 
                 /**
                  * Switches disabled state for widget
@@ -39,7 +39,7 @@ module.exports = function(){
                 /**
                  * Defines click callback
                  * 
-                 * @type {?module:button~IButtonOnClickCallback}
+                 * @type {?module:button~ButtonOnClickCallback}
                  * @default null
                  */
                 onClick: null
@@ -47,8 +47,8 @@ module.exports = function(){
                 /**
                  * This callback is displayed as part of the Requester class.
                  * 
-                 * @callback IButtonOnClickCallback
-                 * @param {module:button~IButtonOnClickActionArguments} args - Action arguments.
+                 * @callback ButtonOnClickCallback
+                 * @param {module:button~ButtonOnClickActionArguments} args - Action arguments.
                  */
             }
         },
@@ -57,11 +57,11 @@ module.exports = function(){
             /**
              * Interface for Button onClick action arguments.
              *
-             * @interface IButtonOnClickActionArguments
-             * @extends module:widget~IWidgetActionArguments
-             * @alias module:button~IButtonOnClickActionArguments
+             * @interface ButtonOnClickActionArguments
+             * @extends module:widget~WidgetActionArguments
+             * @alias module:button~ButtonOnClickActionArguments
              */
-            return /** @lends module:button~IButtonOnClickActionArguments# */ {
+            return /** @lends module:button~ButtonOnClickActionArguments# */ {
                 /**
                  * Event instance
                  * 
